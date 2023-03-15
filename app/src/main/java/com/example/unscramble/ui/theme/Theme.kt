@@ -101,6 +101,7 @@ private val DarkColors = darkColorScheme(
 fun UnscrambleTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     // Dynamic color is available on Android 12+
+    // Dynamic color in this app is turned off for learning purposes
     dynamicColor: Boolean = false,
     content: @Composable () -> Unit
 ) {
@@ -131,21 +132,3 @@ fun UnscrambleTheme(
         content = content
     )
 }
-
-
-//@Composable
-//fun UnscrambleTheme(
-//  useDarkTheme: Boolean = isSystemInDarkTheme(),
-//  content: @Composable() () -> Unit
-//) {
-//  val colors = if (!useDarkTheme) {
-//    LightColors
-//  } else {
-//    DarkColors
-//  }
-//
-//  MaterialTheme(
-//    colorScheme = colors,
-//    content = content
-//  )
-//}
